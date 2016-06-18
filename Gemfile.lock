@@ -10,10 +10,12 @@ GEM
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
     colorator (0.1)
+    diff-lcs (1.2.5)
     execjs (2.6.0)
     fastimage (1.8.0)
       addressable (~> 2.3, >= 2.3.5)
     ffi (1.9.10)
+    ffi (1.9.10-x64-mingw32)
     font-awesome-sass (4.4.0)
       sass (>= 3.2)
     jekyll (3.0.1)
@@ -42,6 +44,14 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.5)
+    mini_portile2 (2.1.0)
+    nokogiri (1.6.8)
+      mini_portile2 (~> 2.1.0)
+      pkg-config (~> 1.1.7)
+    nokogiri (1.6.8-x64-mingw32)
+      mini_portile2 (~> 2.1.0)
+      pkg-config (~> 1.1.7)
+    pkg-config (1.1.7)
     puma (2.15.3)
     rack (1.6.4)
     rack-jekyll (0.4.5)
@@ -53,6 +63,19 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     rouge (1.10.1)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.4)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
     safe_yaml (1.0.4)
     sass (3.4.19)
     sprockets (3.4.1)
@@ -66,6 +89,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   autoprefixer-rails
@@ -74,10 +98,16 @@ DEPENDENCIES
   jekyll-assets
   jekyll-sitemap
   kramdown
+  nokogiri
   puma
+  rack (~> 1.1)
   rack-jekyll
   rake
+  rspec
   sprockets-es6
 
+RUBY VERSION
+   ruby 2.3.0p0
+
 BUNDLED WITH
-   1.10.6
+   1.12.5
