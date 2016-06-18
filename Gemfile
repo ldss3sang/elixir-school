@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.3.0'
 
+gem 'nokogiri'
+gem 'rack', '~>1.1'
+gem 'rspec', :require => 'spec'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'jekyll'
